@@ -1,6 +1,8 @@
 FROM python:3.9-alpine3.13
 MAINTAINER Hooman Shahidi
 
+RUN pip install --upgrade pip
+
 ENV PYTHONUNBUFFERED 1
 
 COPY ./requirements.txt /requirements.txt
